@@ -1,0 +1,39 @@
+.sn-backdrop 
+  background black
+  position absolute
+  left 0
+  top 0
+  bottom 0
+  right 0
+  display none
+  opacity 0
+  z-index 50
+  will-change opacity
+
+  .sn-visible &
+    display block
+
+.sn-sidenav
+  position fixed
+  left 0
+  top 0
+  height 100%
+  z-index 100
+  overflow-y auto
+  will-change transform
+  box-shadow 0px 0px 30px rgba(0, 0, 0, 0.6);
+
+.sn-content
+  position relative
+  z-index 10
+
+.sn-visible,
+.sn-visible body,
+.sn-visible .sn-content
+  overflow hidden
+
+html
+  height 100%
+
+body
+  min-height 100%
