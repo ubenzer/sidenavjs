@@ -12,9 +12,10 @@ to create native-like web applications. Open Google Play Store and swipe your fi
 screen. This library tries to provide the exact same behaviour.
 
 ## Demo
-To see a live demo click [here](https://rawgit.com/ubenzer/sidenavjs/master/demo/index.html) or scan the barcode bellow. Don't forget to try it on your mobile phone too!
+To see a live demo click [here](https://rawgit.com/ubenzer/sidenavjs/master/demo/index.html) or scan the barcode bellow. Don't forget to try it on your mobile phone too! Swipe your finger from the left of the screen towards right, just like you Open
+a sidenav in Android!
 
-[insert barcode here]
+[!Barcode to Demo](demoqr.jpg)
 
 ## Features
 1. Mobile first. Means: The library is small and robust, optimized for fluditly and framerate.
