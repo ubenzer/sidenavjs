@@ -3,14 +3,81 @@
   <head>
     <meta charset="utf-8">
     <title>sidenav.js Demo</title>
+    <!-- Sidenav Related Code Bellow -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="../dist/sidenav.css">
+    <!-- Sidenav Related Code Ends Here -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="demo.css">
   </head>
   <body>
     <div id="backdrop"></div>
-    <div id="sidenav">Hi sidenav</div>
+    <div id="sidenav">
+      <div class="header">
+        <i class="material-icons avatar">menu</i>
+        <div class="title">Sidenav.js</div>
+        <div class="headline">A JavsScript libary to create sidebars in in mobile! No dependencies!</div>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <i class="material-icons">account_circle</i>
+            <span>Some menu item</span>
+          </li>
+          <li class="active">
+            <i class="material-icons">android</i>
+            <span>Another menu item</span>
+          </li>
+          <li>
+            <i class="material-icons">face</i>
+            <span>It doesn't necesserliy to be a menu</span>
+          </li>
+          <li>
+            <i class="material-icons">room</i>
+            <span>Put anything you want!</span>
+          </li>
+          <li>
+            <i class="material-icons">airplanemode_active</i>
+            <span>Scrolling is OK too!</span>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div id="content">
-      <button id="menu-toggle">Click to open</button>
+      <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+        <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+          <div id="menu-toggle" class="mdl-layout__header-row">
+            <i class="material-icons">menu</i>
+            <span class="mdl-layout-title">Sidenav.js</span>
+          </div>
+        </header>
+        <div class="demo-ribbon"></div>
+        <main class="demo-main mdl-layout__content">
+          <div class="demo-container mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+            <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+              <h3>Sidenav.js</h3>
+              <p>No dependencies! Only *2K* when minified and gzipped!</p>
+              <p>Sidenav.js is a JavaScript library that enables users add sidebars to their web site that behaves
+              like a native side navigation component of a mobile phone application.</p>
+              <p>This library tries to emulate the exact same behavior of Android's sidenav in pure JavaScript to enable users
+              to create native-like web applications. Open Google Play Store and swipe your finger from the left of the
+              screen. This library tries to provide the exact same behaviour.</p>
+            </div>
+          </div>
+          <footer class="demo-footer mdl-mini-footer">
+            <div class="mdl-mini-footer--left-section">
+              <ul class="mdl-mini-footer--link-list">
+                <li><a href="https://github.com/ubenzer/sidenavjs">Fork me on Github</a></li>
+                <li>Licensed under MIT</li>
+                <li><a href="https://www.ubenzer.com/">Umut Benzer</a></li>
+              </ul>
+            </div>
+          </footer>
+        </main>
+      </div>
     </div>
     <script src="../dist/sidenav.min.js"></script>
     <script src="demo.js"></script>
