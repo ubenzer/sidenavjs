@@ -5,7 +5,8 @@ No dependencies! Only *2K* when minified and gzipped!
 Sidenav.js is a JavaScript library that enables users add sidebars to their web site that behaves
 like a native side navigation component of a mobile phone application.
 
-[insert a gif here]
+![Sidenav Screencast Gif](sidenav-preview.gif)
+[Hi-res Video](https://www.youtube.com/watch?v=pLeKw-mBVyw&)
 
 This library tries to emulate the exact same behavior of Android's sidenav in pure JavaScript to enable users
 to create native-like web applications. Open Google Play Store and swipe your finger from the left of the
@@ -81,7 +82,7 @@ If you complete one of these and open a PR you are more than welcome! There are 
 2. Add better documentation
 3. Publish on npm
 4. Create a better demo
-5. Enhance browser compatibility (addding a Promise shim is OK, I don't want to introduce a lot of shit to support old browsers)
+5. Enhance browser compatibility (adding a Promise shim is OK, I don't want to introduce a lot of shit to support old browsers)
 6. Setup a web site
 7. Use travis as CI
 etc. etc.
