@@ -25,7 +25,7 @@ function Sidenav(options) {
   // Sets classnames
   this.content.classList.add("sn-content");
   this.sidenav.classList.add("sn-sidenav");
-  this.sidenav.style.transform = "translate3d(" + ((-1 * this.width) - this.extraClosePixels) + "px, 0, 0)";
+  setTransformX(this.sidenav, (-1 * this.width) - this.extraClosePixels);
   this.backdrop.classList.add("sn-backdrop");
 
   // Sets events
@@ -70,7 +70,7 @@ Sidenav.prototype.expandTo = function(px) {
 
   html.classList.add("sn-visible");
 
-  self.sidenav.style.transform = "translate3d(" + (-self.width + px) + "px, 0, 0)";
+  setTransformX(self.sidenav, px - self.width);
   self.backdrop.style.opacity = opacity;
   self.currentOpacity = opacity;
   self.currentWidth = px;
@@ -102,7 +102,7 @@ Sidenav.prototype.showHideSidebarBackdrop = function(show) {
         targetTransform = self.currentWidth - easeOutQuad(timePassed, 0, self.currentWidth + self.extraClosePixels, duration);
       }
 
-      self.sidenav.style.transform = "translate3d(" + ((-1 * self.width) + targetTransform) + "px, 0, 0)";
+      setTransformX(self.sidenav, (-1 * self.width) + targetTransform);
       self.backdrop.style.opacity = targetOpacity;
 
       if (timePassed < duration) {
@@ -214,6 +214,10 @@ Sidenav.prototype.initEvents = function() {
   }
 };
 
+function setTransformX(domEl, px) {
+  domEl.style.transform = "translate3d(" + px + "px, 0, 0)";
+  domEl.style["-webkit-transform"] = "translate3d(" + px + "px, 0, 0)";
+}
 function easeOutQuad(t, b, c, d) {
   t /= d;
   return -c * t * (t - 2) + b;
