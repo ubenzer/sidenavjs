@@ -1,4 +1,5 @@
 # Sidenav.js
+[![devDependency Status](https://david-dm.org/ubenzer/sidenavjs/dev-status.svg)](https://david-dm.org/ubenzer/sidenavjs#info=devDependencies)
 
 No dependencies! Only *2K* when minified and gzipped!
 
@@ -71,6 +72,19 @@ functionality like this:
 
 5. Profit!
 
+## Setting up development environment
+1. Fork the project.
+2. Run `npm i` in project root.
+2. Create a branch with a meaningful name.
+3. Develop something.
+4. Make a pull request
+
+**To run tests run `npm test`.**
+**To create a dist build run `gulp dist`**
+
+## Contributing
+Just open a PR and open a ticket.
+
 ## LICENSE
 MIT
 
@@ -86,9 +100,6 @@ If you complete one of these and open a PR you are more than welcome! There are 
 6. Setup a web site
 7. Use travis as CI
 etc. etc.
-
-## Contributing
-Just open a PR and open a ticket.
 
 ## Credits
 Partially inspired by [Slideout](https://github.com/Mango/slideout).
