@@ -5,6 +5,8 @@ module.exports = Sidenav;
 var doc = window.document;
 var html = doc.documentElement;
 
+require("es6-promise").polyfill(); // Shim for browsers that does not support Promise natively.
+
 function Sidenav(options) {
   options = options || {};
 

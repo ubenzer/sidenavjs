@@ -3,12 +3,13 @@
 [![Join the chat at https://gitter.im/ubenzer/sidenavjs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ubenzer/sidenavjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![devDependency Status](https://david-dm.org/ubenzer/sidenavjs/dev-status.svg)](https://david-dm.org/ubenzer/sidenavjs#info=devDependencies)
 
-No dependencies! Only *2K* when minified and gzipped!
+No dependencies! Only *4K* when minified and gzipped!
 
 Sidenav.js is a JavaScript library that enables users add sidebars to their web site that behaves
 like a native side navigation component of a mobile phone application.
 
 ![Sidenav Screencast Gif](sidenav-preview.gif)
+
 [Hi-res Video](https://www.youtube.com/watch?v=pLeKw-mBVyw&)
 
 This library tries to emulate the exact same behavior of Android's sidenav in pure JavaScript to enable users
@@ -16,14 +17,13 @@ to create native-like web applications. Open Google Play Store and swipe your fi
 screen. This library tries to provide the exact same behaviour.
 
 ## Demo
-To see a live demo click [here](https://rawgit.com/ubenzer/sidenavjs/master/demo/index.html) or scan the barcode at the end of the page. Don't forget to try it on your mobile phone too! Swipe your finger from the left of the screen towards right, just like you Open
-a sidenav in Android!
+To see a live demo click [here](https://rawgit.com/ubenzer/sidenavjs/master/demo/index.html) or scan the barcode at the end of the page. Don't forget to try it on your mobile phone too! Swipe your finger from the left of the screen towards right, just like you Open a sidenav in Android!
 
 ## Features
 1. Mobile first. Means: The library is small and robust, optimized for fluditly and framerate.
 2. Multi-finger handled. Means: We won't confuse your fingers and throw bunch of exceptions if you
 touch with more then one finger.
-3. You can open/close sidenav programmatically. (Bind it to a button.)
+3. You can open/close sidenav programmatically. (By binding it to a button.)
 
 ## How to use
 1. Include `sidenav.min.js` and `sidenav.min.css" in your proejct.
@@ -93,19 +93,15 @@ MIT
 ## TODO List
 If you complete one of these and open a PR you are more than welcome! There are a lot of things, really.
 
-0. Setup test structure
-1. Add tests
+1. Add tests, make overall test structure better.
 2. Add better documentation
-3. Publish on npm
+3. Publish on bower
 4. Create a better demo
-5. Enhance browser compatibility (adding a Promise shim is OK, I don't want to introduce a lot of shit to support old browsers)
-6. Setup a web site
-7. Use travis as CI
-etc. etc.
+5. Setup a web site
+6. Use travis as CI
 
 ## Credits
 Partially inspired by [Slideout](https://github.com/Mango/slideout).
 
 ## Your barcode to the demo
-
 ![Barcode to Demo](demo/demoqr.jpg)

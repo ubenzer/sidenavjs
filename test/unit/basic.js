@@ -32,6 +32,7 @@ describe("Sidenav", function() {
       });
       var promise = sidenav.open();
       promise.should.be.a.Promise();
+      return promise.should.be.eventually.fulfilled();
     });
   });
 });
