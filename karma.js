@@ -2,14 +2,13 @@
 module.exports = function(config) {
   config.set({
     basePath: "",
-    frameworks: ["browserify", "fixture", "mocha", "should-promised", "should"],
+    frameworks: ["fixture", "mocha", "should-promised", "should"],
     files: [
       "test/fixtures/**",
       "test/unit/**/*.js"
     ],
     exclude: [],
     preprocessors: {
-      "test/**/*.js": ["browserify"],
       "lib/*.js": ["coverage"],
       "**/*.html": ["html2js"],
     },
@@ -23,6 +22,12 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ["Chrome"],
-    singleRun: false
+    singleRun: false,
+    plugins: [
+      require('karma-fixture'),
+      require('karma-mocha'),
+      require('karma-should'),
+      require('karma-should-promised')
+    ],
   })
 }
