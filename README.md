@@ -10,7 +10,7 @@ Open Google Play Store and swipe your finger from the left of the screen. This l
 [Hi-res Video](https://www.youtube.com/watch?v=pLeKw-mBVyw&)
 
 ## Demo
-To see a live demo click [here](https://rawgit.com/ubenzer/sidenavjs/master/demo/index.html) or scan the barcode at the end of the page. Don't forget to try it on your mobile phone too! Swipe your finger from the left of the screen towards right, just like you Open a sidenav in Android!
+To see a live demo click [here](https://ubenzer.github.io/sidenavjs/) or scan the barcode at the end of the page. Don't forget to try it on your mobile phone too! Swipe your finger from the left of the screen towards right, just like you Open a sidenav in Android!
 
 ## Install
 
@@ -85,4 +85,4 @@ Just open a PR or a ticket.
 MIT © [ubenzer](https://github.com/ubenzer)
 
 ## Your barcode to the demo
-![Barcode to Demo](demoqr.jpg)
+![Barcode to Demo](demoqr.png)
