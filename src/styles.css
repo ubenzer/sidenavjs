@@ -1,8 +1,38 @@
-/* add css styles here (optional) */
+.backdrop {
+  background: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  opacity: 0;
+  z-index: 50;
+  will-change: opacity;
+  touch-action: none;
+}
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.visible {
+  display: block;
+}
+
+.sidenav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 100;
+  overflow: auto;
+  will-change: transform;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  background: white;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+}
+
+.noOverflow {
+  overflow: hidden;
 }
