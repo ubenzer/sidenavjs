@@ -18,9 +18,14 @@ export default class Sidenav extends Component {
       extraClosePixels: PropTypes.number,
       width: PropTypes.number,
       backdropOpacity: PropTypes.number,
+      animationDuration: PropTypes.number,
       sidenavClass: PropTypes.string,
       sidenavStyle: PropTypes.object,
-      backdropStyle: PropTypes.object
+      backdropStyle: PropTypes.object,
+      contentStyle: PropTypes.object,
+      dragStartSensitivity: PropTypes.number,
+      swipeSensitivity: PropTypes.number,
+      defaultAnimationSensitivity: PropTypes.number
     })
   }
   static defaultOptions = {

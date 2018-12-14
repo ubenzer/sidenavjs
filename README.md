@@ -194,6 +194,11 @@ If sidenav is swiped with a certain amount of speed, even when it is not half wa
 
 Sidenav animation reacts to the swipe speed of the user. If the user takes a rapid action, the animation is gradually speeded up to fit the user's rhythm for a more native-like experience. This number is used to adjust the reaction difference. The number itself is multiplayer in an equation. It is better to play with it and see the difference.
 
+#### options.animationDuration
+**Type:** number
+
+The default animation duration for the sidebar in milliseconds. This will be adjusted to be slower faster depending on the distance that sidenav needs to animate and speed of the swipe.
+
 ## Setting up the development environment
 0. Discuss the change that you want to introduce. You can open an issue for that.
 1. Fork the project.
