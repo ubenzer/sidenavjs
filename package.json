@@ -54,7 +54,7 @@
     "rollup-plugin-babel": "^4.2.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-postcss": "^1.6.3",
+    "rollup-plugin-postcss": "^2.0.0",
     "rollup-plugin-url": "^2.1.0"
   },
   "files": [
