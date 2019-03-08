@@ -3,12 +3,12 @@ import { shallow } from 'enzyme'
 
 import Sidenav from './index'
 
-let props
-
 const dummyElement = elValue =>
   React.createElement('li', { id: `id-${elValue}` }, elValue)
 
 describe('Index', () => {
+  let props
+
   beforeEach(() => {
     props = {
       sidenav: dummyElement('one'),
