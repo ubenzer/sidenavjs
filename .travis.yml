@@ -2,9 +2,6 @@ language: node_js
 node_js:
   - 10
   - 11.10.1
-jobs:
-  include:
-    - stage: unit tests
-      script: "npm test"
-    - stage: lint
-      script: "npm run lint"
+script:
+  - npm run lint
+  - npm test
