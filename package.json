@@ -1,6 +1,6 @@
 {
   "name": "sidenavjs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Sidenav.js is a React component that enables users add left sidebars to their web site that behaves like a native side navigation component of an Android application.",
   "author": "ubenzer",
   "license": "MIT",
@@ -19,7 +19,8 @@
     "start": "rollup -c -w",
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "lint": "eslint . --fix"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
