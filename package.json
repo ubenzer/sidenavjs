@@ -1,6 +1,6 @@
 {
   "name": "sidenavjs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Sidenav.js is a React component that enables users add left sidebars to their web site that behaves like a native side navigation component of an Android application.",
   "author": "ubenzer",
   "license": "MIT",
@@ -23,40 +23,40 @@
     "lint": "eslint ."
   },
   "peerDependencies": {
-    "prop-types": "^15.5.4",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.4",
+    "@babel/core": "^7.4.3",
     "@babel/plugin-external-helpers": "^7.2.0",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
-    "@svgr/rollup": "^4.1.0",
+    "@svgr/rollup": "^4.2.0",
     "babel-core": "^7.0.0-bridge.0",
     "cross-env": "^5.2.0",
     "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.10.0",
-    "eslint": "^5.15.1",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-react": "^7.0.2",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
     "gh-pages": "^2.0.1",
-    "prettier": "^1.16.4",
+    "prettier": "^1.17.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "^2.1.8",
-    "rollup": "^1.6.0",
+    "rollup": "^1.10.0",
     "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-url": "^2.2.0"
+    "rollup-plugin-url": "^2.2.1"
   },
   "files": [
     "dist"
