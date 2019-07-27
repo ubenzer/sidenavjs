@@ -28,6 +28,7 @@ export default class Sidenav extends Component {
       defaultAnimationSensitivity: PropTypes.number
     })
   }
+
   static defaultOptions = {
     extraClosePixels: 30,
     backdropOpacity: 0.5,
@@ -363,7 +364,7 @@ export default class Sidenav extends Component {
   ) {
     const { lastAnimationId } = this.animation
     let animationStartTime = null
-    let animationId = lastAnimationId + 1
+    const animationId = lastAnimationId + 1
     this.animation.lastAnimationId = animationId
     this.setBusyState(true)
 
