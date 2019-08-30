@@ -1,11 +1,13 @@
 {
-  "main.js": "/sidenavjs/static/js/main.aae02d7a.chunk.js",
-  "main.js.map": "/sidenavjs/static/js/main.aae02d7a.chunk.js.map",
-  "static/js/1.f2fe6720.chunk.js": "/sidenavjs/static/js/1.f2fe6720.chunk.js",
-  "static/js/1.f2fe6720.chunk.js.map": "/sidenavjs/static/js/1.f2fe6720.chunk.js.map",
-  "runtime~main.js": "/sidenavjs/static/js/runtime~main.c45aade5.js",
-  "runtime~main.js.map": "/sidenavjs/static/js/runtime~main.c45aade5.js.map",
-  "index.html": "/sidenavjs/index.html",
-  "precache-manifest.651ce0f15388f8326199a6e9df6dbc3f.js": "/sidenavjs/precache-manifest.651ce0f15388f8326199a6e9df6dbc3f.js",
-  "service-worker.js": "/sidenavjs/service-worker.js"
+  "files": {
+    "main.js": "/sidenavjs/static/js/main.ec09a9af.chunk.js",
+    "main.js.map": "/sidenavjs/static/js/main.ec09a9af.chunk.js.map",
+    "runtime~main.js": "/sidenavjs/static/js/runtime~main.56b65aa6.js",
+    "runtime~main.js.map": "/sidenavjs/static/js/runtime~main.56b65aa6.js.map",
+    "static/js/2.2f8e09e7.chunk.js": "/sidenavjs/static/js/2.2f8e09e7.chunk.js",
+    "static/js/2.2f8e09e7.chunk.js.map": "/sidenavjs/static/js/2.2f8e09e7.chunk.js.map",
+    "index.html": "/sidenavjs/index.html",
+    "precache-manifest.4ed883ff280af000d71758e0305f1a5b.js": "/sidenavjs/precache-manifest.4ed883ff280af000d71758e0305f1a5b.js",
+    "service-worker.js": "/sidenavjs/service-worker.js"
+  }
 }
