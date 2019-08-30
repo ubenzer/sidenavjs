@@ -15,7 +15,9 @@
   },
   "rules": {
     "space-before-function-paren": 0,
-    "react/jsx-boolean-value": 0
+    "react/jsx-boolean-value": 0,
+    "react/jsx-fragments": 0,
+    "react/jsx-handler-names": 0
   },
 
   "overrides": [
