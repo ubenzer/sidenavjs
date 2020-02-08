@@ -1,6 +1,6 @@
 {
   "name": "sidenavjs",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Sidenav.js is a React component that enables users add left sidebars to their web site that behaves like a native side navigation component of an Android application.",
   "author": "ubenzer",
   "license": "MIT",
