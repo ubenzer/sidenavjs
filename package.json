@@ -51,7 +51,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "^3.3.1",
-    "rollup": "^1.31.0",
+    "rollup": "^2.0.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
