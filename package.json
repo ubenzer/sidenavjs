@@ -47,7 +47,7 @@
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.2.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "^3.3.1",
