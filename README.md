@@ -2,7 +2,6 @@
 
 [![devDependency Status](https://david-dm.org/ubenzer/sidenavjs/dev-status.svg)](https://david-dm.org/ubenzer/sidenavjs#info=devDependencies)
 [![Build Status](https://travis-ci.org/ubenzer/sidenavjs.svg?branch=master)](https://travis-ci.org/ubenzer/sidenavjs)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ubenzer/sidenavjs.svg)](https://greenkeeper.io/)
 
 Sidenav.js is a React component that enables users add to left side navigation to their website that behaves like a native side navigation component of an Android application. **No dependencies!** Only *3K* when minified and gzipped!
 Open Google Play Store and swipe your finger from the left of the screen. This library tries to provide the exact same behavior.
