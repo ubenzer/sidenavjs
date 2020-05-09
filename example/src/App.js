@@ -7,22 +7,22 @@ export default class App extends Component {
     this.state = {
       sidebarOpen: false,
       busy: false,
-      touched: false
+      touched: false,
     }
     this.sidenavOptions = {
-      sidenavClass: 'sidenav'
+      sidenavClass: 'sidenav',
     }
   }
 
-  onSetSidebarOpen = open => {
+  onSetSidebarOpen = (open) => {
     this.setState({ sidebarOpen: open })
   }
 
-  onSetBusy = busy => {
+  onSetBusy = (busy) => {
     this.setState({ busy })
   }
 
-  onSetTouch = touched => {
+  onSetTouch = (touched) => {
     this.setState({ touched })
   }
 

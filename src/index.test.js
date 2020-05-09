@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 
 import Sidenav from './index'
 
-const dummyElement = elValue =>
+const dummyElement = (elValue) =>
   React.createElement('li', { id: `id-${elValue}` }, elValue)
 
 describe('Index', () => {
@@ -14,7 +14,7 @@ describe('Index', () => {
       sidenav: dummyElement('one'),
       children: dummyElement('two'),
       onSetOpen: jest.fn(),
-      open: false
+      open: false,
     }
   })
 

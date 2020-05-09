@@ -1,8 +1,10 @@
 {
+  "root": true,
   "parser": "babel-eslint",
   "extends": [
     "standard",
-    "standard-react"
+    "standard-react",
+    "plugin:prettier/recommended"
   ],
   "env": {
     "es6": true

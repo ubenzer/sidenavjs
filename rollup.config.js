@@ -14,25 +14,25 @@ export default {
       file: pkg.main,
       format: 'cjs',
       sourcemap: true,
-      exports: 'named'
+      exports: 'named',
     },
     {
       file: pkg.module,
       format: 'es',
       sourcemap: true,
-      exports: 'named'
-    }
+      exports: 'named',
+    },
   ],
   plugins: [
     external(),
     postcss({
-      modules: true
+      modules: true,
     }),
     url(),
     svgr(),
     babel({
-      exclude: 'node_modules/**'
+      exclude: 'node_modules/**',
     }),
-    commonjs()
-  ]
+    commonjs(),
+  ],
 }

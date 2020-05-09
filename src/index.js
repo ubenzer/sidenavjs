@@ -25,8 +25,8 @@ export default class Sidenav extends Component {
       contentStyle: PropTypes.object,
       dragStartSensitivity: PropTypes.number,
       swipeSensitivity: PropTypes.number,
-      defaultAnimationSensitivity: PropTypes.number
-    })
+      defaultAnimationSensitivity: PropTypes.number,
+    }),
   }
 
   static defaultOptions = {
@@ -39,7 +39,7 @@ export default class Sidenav extends Component {
     contentStyle: {},
     dragStartSensitivity: 40,
     swipeSensitivity: 10,
-    defaultAnimationSensitivity: 40
+    defaultAnimationSensitivity: 40,
   }
 
   constructor(props) {
@@ -50,13 +50,13 @@ export default class Sidenav extends Component {
       sidenavStyle: { ...this.options.sidenavStyle },
       backdropStyle: { ...this.options.backdropStyle },
       backdropClass: {
-        [styles.backdrop]: true
+        [styles.backdrop]: true,
       },
       contentClass: {
-        [styles.content]: true
+        [styles.content]: true,
       },
       transform: 0,
-      backdropOpacity: 0
+      backdropOpacity: 0,
     }
     this.animation = {
       fingerId: null,
@@ -67,7 +67,7 @@ export default class Sidenav extends Component {
       previousY: null,
       wasInSidenavOnce: false,
       lastAnimationId: 0,
-      lastSpeed: 0
+      lastSpeed: 0,
     }
     this.sidenavRef = React.createRef()
   }
@@ -102,7 +102,7 @@ export default class Sidenav extends Component {
     doc.removeEventListener('touchstart', this.touchstart)
   }
 
-  touchstart = e => {
+  touchstart = (e) => {
     const { transform } = this.state
     const { open } = this.props
 
@@ -139,9 +139,9 @@ export default class Sidenav extends Component {
     this.setTouchState(true)
   }
 
-  touchmove = e => {
+  touchmove = (e) => {
     const pivotTouch = [...e.changedTouches].find(
-      t => this.animation.fingerId === t.identifier
+      (t) => this.animation.fingerId === t.identifier
     )
     // our finger that starting dragging on screen is not on the screen anymore
     if (!pivotTouch) {
@@ -180,9 +180,9 @@ export default class Sidenav extends Component {
     )
   }
 
-  touchfinish = e => {
+  touchfinish = (e) => {
     const pivotTouch = [...e.changedTouches].find(
-      t => this.animation.fingerId === t.identifier
+      (t) => this.animation.fingerId === t.identifier
     )
     // our finger that starting dragging on screen is not on the screen anymore
     if (!pivotTouch) {
@@ -202,7 +202,7 @@ export default class Sidenav extends Component {
     this.doTouchFinish(shouldOpen)
   }
 
-  doTouchFinish = shouldOpen => {
+  doTouchFinish = (shouldOpen) => {
     if (shouldOpen === true) {
       this.open()
     } else if (shouldOpen === false) {
@@ -220,10 +220,10 @@ export default class Sidenav extends Component {
     px = Math.min(px, this.options.width)
     const opacity = (this.options.backdropOpacity * px) / this.options.width
 
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       backdropClass: { ...prevState.backdropClass, [styles.visible]: true },
       transform: px,
-      backdropOpacity: opacity
+      backdropOpacity: opacity,
     }))
     doc.body.classList.add(styles.noOverflow)
   }
@@ -231,7 +231,7 @@ export default class Sidenav extends Component {
   getTransformXStyle(px) {
     const { width } = this.options
     return {
-      transform: `translate3d(${px - width}px, 0, 0)`
+      transform: `translate3d(${px - width}px, 0, 0)`,
     }
   }
 
@@ -252,22 +252,22 @@ export default class Sidenav extends Component {
   }
 
   open = () => {
-    this.setState(prevState => ({
-      backdropClass: { ...prevState.backdropClass, [styles.visible]: true }
+    this.setState((prevState) => ({
+      backdropClass: { ...prevState.backdropClass, [styles.visible]: true },
     }))
 
     doc.body.classList.add(styles.noOverflow)
 
     const {
       transform: startTransform,
-      backdropOpacity: startOpacity
+      backdropOpacity: startOpacity,
     } = this.state
 
     const {
       animationDuration: fullAnimationDuration,
       width,
       backdropOpacity,
-      extraClosePixels
+      extraClosePixels,
     } = this.options
 
     let animationDuration =
@@ -281,10 +281,10 @@ export default class Sidenav extends Component {
         this.animation.lastSpeed
     }
 
-    const transformAnimationFn = currentTime =>
+    const transformAnimationFn = (currentTime) =>
       Sidenav.easeOutQuad(currentTime, startTransform, width, animationDuration)
 
-    const opacityAnimationFn = currentTime =>
+    const opacityAnimationFn = (currentTime) =>
       Sidenav.easeOutQuad(
         currentTime,
         startOpacity,
@@ -308,13 +308,13 @@ export default class Sidenav extends Component {
   close = () => {
     const {
       transform: startTransform,
-      backdropOpacity: startOpacity
+      backdropOpacity: startOpacity,
     } = this.state
 
     const {
       animationDuration: fullAnimationDuration,
       extraClosePixels,
-      width
+      width,
     } = this.options
 
     let animationDuration =
@@ -328,7 +328,7 @@ export default class Sidenav extends Component {
         Math.abs(this.animation.lastSpeed)
     }
 
-    const transformAnimationFn = currentTime =>
+    const transformAnimationFn = (currentTime) =>
       Sidenav.easeOutQuad(
         currentTime,
         startTransform,
@@ -336,12 +336,12 @@ export default class Sidenav extends Component {
         animationDuration
       )
 
-    const opacityAnimationFn = currentTime =>
+    const opacityAnimationFn = (currentTime) =>
       Sidenav.easeOutQuad(currentTime, startOpacity, 0, animationDuration)
 
     const onAnimationEnd = () => {
-      this.setState(prevState => ({
-        backdropClass: { ...prevState.backdropClass, [styles.visible]: false }
+      this.setState((prevState) => ({
+        backdropClass: { ...prevState.backdropClass, [styles.visible]: false },
       }))
       doc.body.classList.remove(styles.noOverflow)
       this.setBusyState(false)
@@ -368,7 +368,7 @@ export default class Sidenav extends Component {
     this.animation.lastAnimationId = animationId
     this.setBusyState(true)
 
-    const animate = time => {
+    const animate = (time) => {
       if (animationId !== this.animation.lastAnimationId) {
         // looks like a new animation triggered while this was in progress... ignore this one.
         return
@@ -392,7 +392,7 @@ export default class Sidenav extends Component {
 
       this.setState({
         transform: targetTransform,
-        backdropOpacity: targetOpacity
+        backdropOpacity: targetOpacity,
       })
 
       if (timePassed < animationDuration) {
@@ -422,7 +422,7 @@ export default class Sidenav extends Component {
               return [...acc, k]
             }
             return acc
-          }, [])
+          }, []),
         ]
       }
 
@@ -446,7 +446,7 @@ export default class Sidenav extends Component {
       backdropClass,
       contentClass,
       transform,
-      backdropOpacity
+      backdropOpacity,
     } = this.state
     const { sidenavClass: extraSidenavClass, contentStyle } = this.options
 
